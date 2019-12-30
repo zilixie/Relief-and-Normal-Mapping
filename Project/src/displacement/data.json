@@ -1,0 +1,18 @@
+{
+	"vertex": "../src/displacement/vertex_shader.glsl",
+	"tess control": "../src/displacement/tess_control_shader.glsl",
+	"tess evaluation": "../src/displacement/tess_eval_shader.glsl",
+	"fragment": "../src/displacement/fragment_shader.glsl",
+	"textures" : [],
+	"objects": [
+		{
+			"type": "sphere",
+			"x": 0,
+			"y": 0,
+			"z": 0,
+			"scale": 1,
+			"texture_num": 0,
+			"normal_num": 0
+		}
+	]
+}

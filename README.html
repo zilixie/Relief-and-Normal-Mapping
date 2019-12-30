@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link type="text/css" rel="stylesheet" href="css/github-markdown.css"/>
+<link rel="stylesheet" href="css/github-markdown.css">
+<style>
+.markdown-body {
+box-sizing: border-box;
+min-width: 200px;
+max-width: 980px;
+margin: 0 auto;
+padding: 45px;
+}
+</head>
+<body>
+
+<pre><code>@media (max-width: 767px) {
+    .markdown-body {
+        padding: 15px;
+    }
+}
+</code></pre>
+
+<p></style>
+<article class="markdown-body"></p>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "all"} } });
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<div style="display:none">
+<span class="math">\(\newcommand{\A}{\mat{A}}\)</span>
+<span class="math">\(\newcommand{\B}{\mat{B}}\)</span>
+<span class="math">\(\newcommand{\C}{\mat{C}}\)</span>
+<span class="math">\(\newcommand{\D}{\mat{D}}\)</span>
+<span class="math">\(\newcommand{\E}{\mat{E}}\)</span>
+<span class="math">\(\newcommand{\F}{\mat{F}}\)</span>
+<span class="math">\(\newcommand{\G}{\mat{G}}\)</span>
+<span class="math">\(\newcommand{\H}{\mat{H}}\)</span>
+<span class="math">\(\newcommand{\I}{\mat{I}}\)</span>
+<span class="math">\(\newcommand{\J}{\mat{J}}\)</span>
+<span class="math">\(\newcommand{\K}{\mat{K}}\)</span>
+<span class="math">\(\newcommand{\L}{\mat{L}}\)</span>
+<span class="math">\(\newcommand{\M}{\mat{M}}\)</span>
+<span class="math">\(\newcommand{\N}{\mat{N}}\)</span>
+<span class="math">\(\newcommand{\One}{\mathbf{1}}\)</span>
+<span class="math">\(\newcommand{\P}{\mat{P}}\)</span>
+<span class="math">\(\newcommand{\Q}{\mat{Q}}\)</span>
+<span class="math">\(\newcommand{\Rot}{\mat{R}}\)</span>
+<span class="math">\(\newcommand{\R}{\mathbb{R}}\)</span>
+<span class="math">\(\newcommand{\S}{\mathcal{S}}\)</span>
+<span class="math">\(\newcommand{\T}{\mat{T}}\)</span>
+<span class="math">\(\newcommand{\U}{\mat{U}}\)</span>
+<span class="math">\(\newcommand{\V}{\mat{V}}\)</span>
+<span class="math">\(\newcommand{\W}{\mat{W}}\)</span>
+<span class="math">\(\newcommand{\X}{\mat{X}}\)</span>
+<span class="math">\(\newcommand{\Y}{\mat{Y}}\)</span>
+<span class="math">\(\newcommand{\argmax}{\mathop{\text{argmax}}}\)</span>
+<span class="math">\(\newcommand{\argmin}{\mathop{\text{argmin}}}\)</span>
+<span class="math">\(\newcommand{\a}{\vec{a}}\)</span>
+<span class="math">\(\newcommand{\b}{\vec{b}}\)</span>
+<span class="math">\(\newcommand{\c}{\vec{c}}\)</span>
+<span class="math">\(\newcommand{\d}{\vec{d}}\)</span>
+<span class="math">\(\newcommand{\e}{\vec{e}}\)</span>
+<span class="math">\(\newcommand{\f}{\vec{f}}\)</span>
+<span class="math">\(\newcommand{\g}{\vec{g}}\)</span>
+<span class="math">\(\newcommand{\mat}[1]{\mathbf{#1}}\)</span>
+<span class="math">\(\newcommand{\min}{\mathop{\text{min}}}\)</span>
+<span class="math">\(\newcommand{\m}{\vec{m}}\)</span>
+<span class="math">\(\newcommand{\n}{\vec{n}}\)</span>
+<span class="math">\(\newcommand{\p}{\vec{p}}\)</span>
+<span class="math">\(\newcommand{\q}{\vec{q}}\)</span>
+<span class="math">\(\newcommand{\r}{\vec{r}}\)</span>
+<span class="math">\(\newcommand{\transpose}{{\mathsf T}}\)</span>
+<span class="math">\(\newcommand{\tr}[1]{\mathop{\text{tr}}{\left(#1\right)}}\)</span>
+<span class="math">\(\newcommand{\s}{\vec{s}}\)</span>
+<span class="math">\(\newcommand{\t}{\vec{t}}\)</span>
+<span class="math">\(\newcommand{\u}{\vec{u}}\)</span>
+<span class="math">\(\newcommand{\vec}[1]{\mathbf{#1}}\)</span>
+<span class="math">\(\newcommand{\x}{\vec{x}}\)</span>
+<span class="math">\(\newcommand{\y}{\vec{y}}\)</span>
+<span class="math">\(\newcommand{\z}{\vec{z}}\)</span>
+<span class="math">\(\newcommand{\0}{\vec{0}}\)</span>
+<span class="math">\(\renewcommand{\v}{\vec{v}}\)</span>
+<!-- https://github.com/mathjax/MathJax/issues/1766 -->
+<span class="math">\(\renewcommand{\hat}[1]{\widehat{#1}}\)</span>
+</div>
+
+<h1 id="computergraphics–raytracing">Computer Graphic: Procedural Texture and Texture Mapping</h1>
+<p>A 3D scene editor implemented in C++ using OpenGL that supports different types texture techinique: perlin noise, procedural bump, texture mapping, normal mapping, parallax mapping.  Library used: Eigen, GLFW, SOIL. It also supports the basic functionalities of a 3D object editor: <code>insert</code>, <code>tranlate</code>, <code>colorize</code>, <code>rotate</code>, <code>scale</code>, <code>animate</code>, <code>delete</code> for triangle mesh objects in <code>.OFF</code> file format and it allows users to export scene into <code>.svg</code> files.</p>
+
+
+<h2 id="ds">Perlin Noise</h2>
+<p>What perlin noise does? Generate smooth pseudo noise given seed in 3D. What can it be used for? produce game scenes such as mountains, seas, clouds... How it is implement? <a href=https://flafla2.github.io/2014/08/09/perlinnoise.html>useful reading</a></p>
+<p>1.Tessellation Shader<br>
+2.Sphere Tangent Space</p>
+<h3>procedural bump</h3>
+<video width="640" height="400" controls>
+  <source src="images/project1.mp4" type="video/mp4">
+</video>
+
+<h3>procedural texture and displacement</h3>
+<video width="640" height="400" controls>
+  <source src="images/project2.mp4" type="video/mp4">
+</video>
+
+<h3>Planets</h3>
+<video width="640" height="400" controls>
+  <source src="images/project3.mp4" type="video/mp4">
+</video>
+
+
+<h2 id="ds">Texture Mapping</h2>
+<p></p>
+<h3>Simple Texture map</h3>
+<video width="640" height="400" controls>
+  <source src="images/project4.mp4" type="video/mp4">
+</video>
+
+<h3>Normal Mapping</h3>
+<video width="640" height="400" controls>
+  <source src="images/project5.mp4" type="video/mp4">
+</video>
+
+<h3>Parallax Mapping</h3>
+<video width="640" height="400" controls>
+  <source src="images/project6.mp4" type="video/mp4">
+</video>
+
+
+
+
+
+
+<h2 id="ds">How To Use</h2>
+<p>
+<code>O</code>: Start Translation mode.<br>
+<code>P</code>: Start Deletion mode.<br>
+<code>U</code>: Start Animation mode.<br>
+<code>SPACE</code>: Start/Stop the rotation of camera (by default the camera rotates arounf Y axis).<br>
+<code>&lt, &gt</code>: Change color for selected object.<br>
+<code>/</code>: Change projection (perspective or orthogonal)<br>
+<code>[,]</code>: change the shading method (vertex normal or face normal)<br>
+
+<code>&#8593;,&#8595;,&#8592;,&#8594;</code>: Move the camera on trackball up, down, left, right respectively by 2 degree.<br>
+<code>+,-</code>: Zoom in or out by 3%.<br>
+<code>J,M</code>: Rotate the selected Object by 2 degree clockwise or counter-clockwise around the Y axis.<br>
+<code>H,N</code>: Rotate the selected Object by 2 degree clockwise or counter-clockwise around the Z axis.<br>
+<code>G,B</code>: Rotate the selected Object by 2 degree clockwise or counter-clockwise around the X axis.<br>
+<code>K,L</code>: Scale the selected object up or down by 5% respectively.<br>
+
+<code>W,S</code>: Move the camera on Y axis.<br>
+<code>E,D</code>: Move the camera on X axis.<br>
+<code>R,F</code>: Move the camera on Z axis.<br>
+<code>Z</code>: Start the animation if the bezier curve for an object was constructed. <br>
+<code>X</code>: Take a screenshot and export scene to <code>.svg</code> file. <br>
+<code>Q</code>: Quit the program.</p>
+
+
+<h2 id="ds">How To Run?</h2>
+<p>Within the zx979 folder:</p>
+<blockquote>
+<pre><code>cd Assignment_2
+mkdir build
+cd build
+cmake -DCMAKE_BUILD_TYPE=Release ../
+make
+./Assignment2_bin</code></pre>
+</blockquote>
+
+<blockquote>
+<pre><code>cd Assignment_2
+./Project_bin ../src/solar_sys/data.json
+./Project_bin ../src/displacement/data.json
+./Project_bin ../src/bump_map/data.json
+./Project_bin ../src/procedural_bump/data.json 
+</code></pre>
+</blockquote>
+
+</body>
+</html>

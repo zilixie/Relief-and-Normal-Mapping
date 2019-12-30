@@ -1,0 +1,45 @@
+{
+	"vertex": "../src/texture_map/vertex_shader.glsl",
+	"tess control": "",
+	"tess evaluation": "",
+	"fragment": "../src/texture_map/fragment_shader.glsl",
+	"textures" : ["../data/cube.png", "../data/cube2.png", "../data/cube3.jpg", "../data/cube4.png"],
+	"objects": [
+		{
+			"type": "cube1",
+			"x": 0,
+			"y": 0.9,
+			"z": 0.9,
+			"scale": 1,
+			"texture_num": 0,
+			"normal_num": 0
+		},
+		{
+			"type": "cube1",
+			"x": 0,
+			"y": -0.9,
+			"z": 0.9,
+			"scale": 1,
+			"texture_num": 1,
+			"normal_num": 0
+		},
+		{
+			"type": "cube1",
+			"x": 0,
+			"y": -0.9,
+			"z": -0.9,
+			"scale": 1,
+			"texture_num": 2,
+			"normal_num": 0
+		},
+		{
+			"type": "cube1",
+			"x": 0,
+			"y": 0.9,
+			"z": -0.9,
+			"scale": 1,
+			"texture_num": 3,
+			"normal_num": 0
+		}
+	]
+}

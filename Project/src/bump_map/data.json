@@ -1,0 +1,29 @@
+{
+	"vertex": "../src/bump_map/vertex_shader.glsl",
+	"tess control": "",
+	"tess evaluation": "",
+	"fragment": "../src/bump_map/fragment_shader.glsl",
+	"textures" : ["../data/brick.png", "../data/normal.png", "../data/depth.png","../data/brick3.png", "../data/normal2.png", "../data/depth2.png"],
+	"objects": [
+		{
+			"type": "cube2",
+			"x": 0,
+			"y": 0.9,
+			"z": 0,
+			"scale": 1,
+			"texture_num": 0,
+			"normal_num": 4,
+			"depth_num": 5
+		},
+		{
+			"type": "cube2",
+			"x": 0,
+			"y": -0.9,
+			"z": 0,
+			"scale": 1,
+			"texture_num": 3,
+			"normal_num": 1,
+			"depth_num": 2
+		}
+	]
+}

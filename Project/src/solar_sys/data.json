@@ -1,0 +1,54 @@
+{
+	"vertex": "../src/solar_sys/vertex_shader.glsl",
+	"tess control": "../src/solar_sys/tess_control_shader.glsl",
+	"tess evaluation": "../src/solar_sys/tess_eval_shader.glsl",
+	"fragment": "../src/solar_sys/fragment_shader.glsl",
+	"textures" : [],
+	"objects": [
+		{
+			"type": "sphere",
+			"x": 0,
+			"y": 0,
+			"z": 0,
+			"scale": 1,
+			"texture_num": 0,
+			"normal_num": 0
+		},
+		{
+			"type": "sphere",
+			"x": 1.2,
+			"y": 0,
+			"z": -1.0,
+			"scale": 0.4,
+			"texture_num": 0,
+			"normal_num": 0
+		},
+		{
+			"type": "sphere",
+			"x": 2,
+			"y": 0.5,
+			"z": 0.8,
+			"scale": 0.6,
+			"texture_num": 0,
+			"normal_num": 0
+		},
+		{
+			"type": "sphere",
+			"x": -2.2,
+			"y": 1.2,
+			"z": -0.5,
+			"scale": 1.4,
+			"texture_num": 0,
+			"normal_num": 0
+		},
+		{
+			"type": "sphere",
+			"x": -2.2,
+			"y": -1.2,
+			"z": -0.5,
+			"scale": 0.8,
+			"texture_num": 0,
+			"normal_num": 0
+		}
+	]
+}
