@@ -46,7 +46,6 @@ What perlin noise does? Generate smooth pseudo noise given seed in 3D. What can 
 >cmake -DCMAKE_BUILD_TYPE=Release ../  
 >make  
 
->cd project  
 >./Project_bin ../src/solar_sys/data.json  
 >./Project_bin ../src/displacement/data.json  
 >./Project_bin ../src/bump_map/data.json  
