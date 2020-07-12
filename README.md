@@ -10,8 +10,10 @@ What perlin noise does? Generate smooth pseudo noise given seed in 3D. What can 
 
 ## procedural bump
 <img src="https://github.com/zilixie/Relief-and-Normal-Mapping/blob/master/images/project1.gif" width="720" height="450">
+
 ## procedural texture and displacement
 <img src="https://github.com/zilixie/Relief-and-Normal-Mapping/blob/master/images/project2.gif" width="720" height="450">
+
 ## Parallax Mapping
-<img src="https://github.com/zilixie/Relief-and-Normal-Mapping/blob/master/images/project6.gif" width="720" height="450">
+<img src="https://github.com/zilixie/Relief-and-Normal-Mapping/blob/master/images/project6.gif" width="720" height="543">
 
