@@ -5,6 +5,5 @@ A 3D scene editor implemented in C++ using OpenGL that supports different types 
 
 # Perlin Noise
 What perlin noise does? Generate smooth pseudo noise given seed in 3D. What can it be used for? produce game scenes such as mountains, seas, clouds...
-
-1.Tessellation Shader</br>
-2.Sphere Tangent Space</br>
+1.Tessellation Shader
+2.Sphere Tangent Space
