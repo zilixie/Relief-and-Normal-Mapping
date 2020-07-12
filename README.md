@@ -15,5 +15,5 @@ What perlin noise does? Generate smooth pseudo noise given seed in 3D. What can 
 <img src="https://github.com/zilixie/Relief-and-Normal-Mapping/blob/master/images/project2.gif" width="720" height="450">
 
 ## Parallax Mapping
-<img src="https://github.com/zilixie/Relief-and-Normal-Mapping/blob/master/images/project6.gif" width="720" height="543">
+<img src="https://github.com/zilixie/Relief-and-Normal-Mapping/blob/master/images/project6.gif" width="720" height="544">
 
