@@ -38,3 +38,16 @@ What perlin noise does? Generate smooth pseudo noise given seed in 3D. What can 
 >Z: Start the animation if the bezier curve for an object was constructed. </br>
 >X: Take a screenshot and export scene to .svg file. </br>
 >Q: Quit the program.</br>
+
+## How To Run?
+>cd project  
+>mkdir build  
+>cd build  
+>cmake -DCMAKE_BUILD_TYPE=Release ../  
+>make  
+
+>cd project  
+>./Project_bin ../src/solar_sys/data.json  
+>./Project_bin ../src/displacement/data.json  
+>./Project_bin ../src/bump_map/data.json  
+>./Project_bin ../src/procedural_bump/data.json   
