@@ -1,5 +1,6 @@
 # Relief-and-Normal-Mapping & Procedural Texture
 Project Website: https://zilixie.github.io/Relief-and-Normal-Mapping/
+This project was built on my previous 3D scene editor: https://zilixie.github.io/3D-Scene-Editor/
 
 A 3D scene editor implemented in C++ using OpenGL that supports different types texture techinique: perlin noise, procedural bump, texture mapping, normal mapping, parallax mapping. Library used: Eigen, GLFW, SOIL. It also supports the basic functionalities of a 3D object editor: insert, tranlate, colorize, rotate, scale, animate, delete for triangle mesh objects in .OFF file format and it allows users to export scene into .svg files.
 
